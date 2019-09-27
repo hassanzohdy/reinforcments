@@ -7,7 +7,9 @@
 
 `npm i reinforcements`
 
-# Usage
+# Importing package
+
+You can import package using `commonJs` format  or using `require` syntax.
 
 ```js
 import $_ from 'reinforcements';
@@ -16,7 +18,7 @@ import $_ from 'reinforcements';
 OR 
 
 ```js
-const { $_ } = require('reinforcments');
+const { $_ } = require('reinforcements');
 ```
 
 ## Usage
