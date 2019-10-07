@@ -1,10 +1,10 @@
 {
   "name": "reinforcements",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A package to give a massive reinforcements to variant types of data in Nodejs/Javascript",
   "main": "dist/reinforcer.js",
   "scripts": {
-    "test": "npx mocha tests --recursive"
+    "tests": "npx mocha tests --recursive"
   },
   "repository": {
       "type": "git",

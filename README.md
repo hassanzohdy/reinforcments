@@ -29,7 +29,7 @@ import $_ from 'reinforcements';
 
 let myArray = $_([1, 2, 3]);
 
-console.log(myArray.min()); // 1
+myArray.min(); // 1
 ```
 
 # Available Helpers
@@ -83,21 +83,7 @@ import $_ from 'reinforcements';
 
 let myArray = $_([1, 2, 3]);
 
-console.log(myArray.min()); // 1 
-```
-
- ## Array min
- Returns the minimum value of the array items.
-
-### Example
-
-```js
-
-import $_ from 'reinforcements';
-
-let myArray = $_([1, 2, 3]);
-
-console.log(myArray.min()); // 1 
+myArray.min(); // 1 
 ```
 
 # Tests
