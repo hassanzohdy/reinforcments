@@ -1,7 +1,7 @@
 import { Macroable, Arrayable, EventsInterface } from 'ts-contracts';
 
 type ArrayType = number | string | object | any;
-    
+
 export default class Arr<T> implements Arrayable {
     /**
      * Counter of array;
@@ -366,18 +366,19 @@ export default class Arr<T> implements Arrayable {
     macro(methodName: string, callback: Function): Macroable {
         throw new Error("Method not implemented.");
     }
-    
+
     /**
      * {@inheritdoc}
      */
     public get length(): number {
         return this.items.length;
     }
-    
+
     /**
      * {@inheritdoc}
      */
     public [Symbol.iterator](): Iterator<ArrayType> {
+        this.counter = 0;
         return {
             next: (): IteratorResult<ArrayType> => {
                 return {

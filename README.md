@@ -9,7 +9,7 @@
 
 # Importing package
 
-You can import package using `commonJs` format  or using `require` syntax.
+You can import package using `CommonJS` format  or using `require` syntax.
 
 ```js
 import $_ from 'reinforcements';

@@ -1,16 +1,17 @@
 {
   "name": "reinforcements",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A package to give a massive reinforcements to variant types of data in Nodejs/Javascript",
   "main": "dist/reinforcer.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "npx mocha tests --recursive"
   },
   "repository": {
       "type": "git",
       "url": "https://github.com/hassanzohy/reinforcments"
   },
   "devDependencies": {
+    "ts-contracts": "^1.0.1",
     "chai": "^4.2.0",
     "chai-iterator": "^3.0.2",
     "mocha": "^6.2.0"

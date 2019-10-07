@@ -1,32 +1,12 @@
 "use strict";
-var __read = (this && this.__read) || function (o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-};
-var __spread = (this && this.__spread) || function () {
-    for (var ar = [], i = 0; i < arguments.length; i++) ar = ar.concat(__read(arguments[i]));
-    return ar;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var Arr = /** @class */ (function () {
+class Arr {
     /**
      * Constructor
      *
      * @param {array} items
      */
-    function Arr(items) {
+    constructor(items) {
         /**
          * Counter of array;
          *
@@ -42,358 +22,317 @@ var Arr = /** @class */ (function () {
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.min = function () {
-        return Math.min.apply(Math, __spread(this.items));
-    };
+    min() {
+        return Math.min(...this.items);
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.max = function () {
+    max() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.avg = function () {
+    avg() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.average = function () {
+    average() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.merge = function () {
-        var arrays = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            arrays[_i] = arguments[_i];
-        }
+    merge(...arrays) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.concat = function () {
-        var arrays = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            arrays[_i] = arguments[_i];
-        }
+    concat(...arrays) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.unique = function () {
+    unique() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.shift = function () {
-        var items = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            items[_i] = arguments[_i];
-        }
+    shift(...items) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.unshift = function () {
+    unshift() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.push = function () {
-        var items = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            items[_i] = arguments[_i];
-        }
+    push(...items) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.pushOnce = function () {
-        var items = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            items[_i] = arguments[_i];
-        }
+    pushOnce(...items) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.pop = function () {
+    pop() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.end = function () {
+    end() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.remove = function (value) {
+    remove(value) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.removeAll = function (value) {
+    removeAll(value) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.first = function (callback) {
+    first(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.includes = function (value) {
+    includes(value) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.toArray = function () {
+    toArray() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.map = function (callback) {
+    map(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.forEach = function (callback) {
+    forEach(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.filter = function (callback) {
+    filter(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.sort = function (callback) {
+    sort(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.sortBy = function (key) {
+    sortBy(key) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.sortByDesc = function (key) {
+    sortByDesc(key) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.reduce = function (callback, initialValue) {
+    reduce(callback, initialValue) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.chunk = function (size) {
+    chunk(size) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.clone = function () {
+    clone() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.reverse = function () {
+    reverse() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.key = function (value) {
+    key(value) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.indexOf = function (value) {
+    indexOf(value) {
         return this.items.indexOf(value);
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.lastIndexOf = function (value) {
+    lastIndexOf(value) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.isEmpty = function () {
+    isEmpty() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.isNotEmpty = function () {
+    isNotEmpty() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.random = function () {
+    random() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.replace = function (oldValue, newValue) {
+    replace(oldValue, newValue) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.replaceAll = function (oldValue, newValue) {
+    replaceAll(oldValue, newValue) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.shuffle = function () {
+    shuffle() {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.slice = function (begin, end) {
+    slice(begin, end) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.splice = function (start, deleteCount) {
-        var items = [];
-        for (var _i = 2; _i < arguments.length; _i++) {
-            items[_i - 2] = arguments[_i];
-        }
+    splice(start, deleteCount, ...items) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.some = function (callback) {
+    some(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.every = function (callback) {
+    every(callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.unset = function () {
-        var keys = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            keys[_i] = arguments[_i];
-        }
+    unset(...keys) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.on = function (event, callback) {
+    on(event, callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.once = function (event, callback) {
+    once(event, callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.subscribe = function (event, callback) {
+    subscribe(event, callback) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.trigger = function (event) {
-        var values = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            values[_i - 1] = arguments[_i];
-        }
+    trigger(event, ...values) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.emit = function (event) {
-        var values = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            values[_i - 1] = arguments[_i];
-        }
+    emit(event, ...values) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.off = function (event) {
+    off(event) {
         throw new Error("Method not implemented.");
-    };
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype.macro = function (methodName, callback) {
+    macro(methodName, callback) {
         throw new Error("Method not implemented.");
-    };
-    Object.defineProperty(Arr.prototype, "length", {
-        /**
-         * {@inheritdoc}
-         */
-        get: function () {
-            return this.items.length;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    }
     /**
      * {@inheritdoc}
      */
-    Arr.prototype[Symbol.iterator] = function () {
-        var _this = this;
+    get length() {
+        return this.items.length;
+    }
+    /**
+     * {@inheritdoc}
+     */
+    [Symbol.iterator]() {
+        this.counter = 0;
         return {
-            next: function () {
+            next: () => {
                 return {
-                    done: _this.length == _this.counter,
-                    value: _this.items[_this.counter++],
+                    done: this.length == this.counter,
+                    value: this.items[this.counter++],
                 };
             },
         };
-    };
-    return Arr;
-}());
+    }
+}
 exports.default = Arr;
 //# sourceMappingURL=array.js.map
