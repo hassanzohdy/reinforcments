@@ -76,7 +76,7 @@ export default class Arr<T> implements Arrayable {
     /**
      * {@inheritdoc}
      */
-    public shift(...items: any[]): Arrayable {
+    public shift(): Arrayable {
         throw new Error("Method not implemented.");
     }
 
@@ -367,6 +367,20 @@ export default class Arr<T> implements Arrayable {
         throw new Error("Method not implemented.");
     }
 
+    /**
+     * {@inheritdoc}
+     */
+    public pluck(key: string): Arrayable {
+        throw new Error("Method not implemented.");
+    }
+
+    /**
+     * {@inheritdoc} 
+     */
+    public where(key: string, operator: any = null, value: any = null): Arrayable {
+        throw new Error("Method not implemented.");
+    }
+    
     /**
      * {@inheritdoc}
      */
